@@ -1,3 +1,5 @@
+import import_test
+
 # 输出hello world
 print('hello world')
 
@@ -67,3 +69,24 @@ print(int('123'), type(int('123')))
 ## float()函数
 print(type('123.456'))
 print(float('123.456'), type(float('123.456')))
+
+# 字符串格式化
+
+## %
+print('hello %s' % 'world')
+print('hello %s, %s' % ('world', 'python'))
+
+## format()
+print('hello {}'.format('world'))
+print('hello {}, {}'.format('world', 'python'))
+print('hello {1}, {0}'.format('world', 'python'))
+
+## f-string
+name = 'python'
+print(f'hello {name}')
+str = f'hello {name}'
+print(str)
+
+# import test 打印
+print(import_test.importTest)
+print(import_test.importTestNum)

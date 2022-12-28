@@ -21,9 +21,13 @@ print(name[1])
 ## 列表
 list = [1, 2, 3, 4, 5]
 print(list[1:4])
+print(list[:2])
 
 list[0] = 0   # 可以重新赋值
 print(list)
+
+list2 = list[:2]
+print(f'list2: {list2}')
 
 ## 元组
 tuple = (1, 2, 3, 4, 5)

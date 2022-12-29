@@ -134,3 +134,4 @@ python/web/uploads/
 
 # 训练及测试数据集
 mnist
+pytorch/data

@@ -9,7 +9,6 @@ import torch
 import torch.nn as nn
 import torch.utils.data as Data
 import torchvision
-import matplotlib.pyplot as plt
 
 
 # 检查设备是否支持GPU
@@ -121,10 +120,10 @@ def main():
                       '| train loss: %.4f' % loss.data.numpy(),
                       '| test accuracy: %.2f' % accuracy)
 
-    test_output = cnn(test_x[:100]) # 取测试集前100个
+    test_output = cnn(test_x[:100])  # 取测试集前100个
     pred_y = torch.max(test_output, 1)[1].data.numpy().squeeze()
-    print(pred_y) # 预测值
-    print(test_y[:100]) # 取测试结果前100个
+    print(pred_y)  # 预测值
+    print(test_y[:100])  # 取测试结果前100个
 
 
 if __name__ == "__main__":
